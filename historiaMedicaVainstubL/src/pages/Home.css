@@ -1,0 +1,7 @@
+.nombre-paciente{
+    cursor: pointer;
+}
+
+.nombre-paciente:hover{
+    font-weight: bold;
+}
