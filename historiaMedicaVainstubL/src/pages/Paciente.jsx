@@ -11,6 +11,14 @@ const Paciente = () => {
         navigate("/");
     }
 
+    const actualizacionHistorial = () => {
+        navigate("/ActualizacionHistorial");
+    }
+
+    const editorPaciente = () => {
+        navigate("/EditorPaciente");
+    }
+
     return (
       <>
         <Navbar/>
@@ -113,8 +121,8 @@ const Paciente = () => {
                     alignItems: "center", // Centra los botones horizontalmente
                     }}
                 >
-                    <Button variant="contained" sx={{ width: "300px", height: "80px", fontSize: "20px" }}>Registro de consultas</Button>
-                    <Button variant="contained" sx={{ width: "300px", height: "80px", fontSize: "20px" }}>Editar paciente</Button>
+                    <Button variant="contained" sx={{ width: "300px", height: "80px", fontSize: "20px" }} onClick={actualizacionHistorial}>Registro de consultas</Button>
+                    <Button variant="contained" sx={{ width: "300px", height: "80px", fontSize: "20px" }} onClick={editorPaciente}>Editar paciente</Button>
                     <Button variant="contained" sx={{ width: "300px", height: "80px", fontSize: "20px" }} onClick={volverInicio}>Volver al inicio</Button>
                 </Box>
             </Grid>

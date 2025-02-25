@@ -11,6 +11,10 @@ const Home = () => {
         navigate('/Paciente')
     }
 
+    const NuevoPaciente = () => {
+      navigate('/NuevoPaciente')
+  }
+
     return (
       <>
         <Navbar/>
@@ -51,7 +55,7 @@ const Home = () => {
               gap: 2, // Espaciado entre botones
               alignItems: "center", // Centra los botones horizontalmente
               }}>
-              <Button variant="contained" sx={{ width: "300px", height: "80px", fontSize: "20px" }}>Nuevo paciente</Button>
+              <Button variant="contained" sx={{ width: "300px", height: "80px", fontSize: "20px" }} onClick={NuevoPaciente}>Nuevo paciente</Button>
             </Box>
           </Grid>
         </Grid>
